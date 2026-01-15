@@ -109,6 +109,11 @@ body {
   filter: brightness(1) contrast(1);
 }
 
+.spacer {
+  height: 40vh; /* Juster til 30vh, 50vh etter behov */
+}
+
+
 /* === INNHOLD SOM SCROLLER OVER === */
 .content-feed {
   position: relative;
