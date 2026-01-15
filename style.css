@@ -10,7 +10,7 @@
 body {
   font-family: 'Georgia', serif;
   background-color: #f6f2ec;
-  color: #111;
+  color: #5a4c40;
   overflow-x: hidden;
 }
 
@@ -83,7 +83,7 @@ body {
   text-align: center;
   margin-top: 3rem;
   font-size: 0.9rem;
-  color: #888;
+  color: #5a4c40;
   border-top: 1px dotted #ccc;
   padding-top: 1rem;
 }
@@ -134,7 +134,7 @@ body {
   width: 66%;
   margin: 0 auto 4rem auto;
   background: rgba(255, 255, 255, 0.95);
-  color: #111;
+  color: #5a4c40;
   border-radius: 20px;
   padding: 3rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -225,7 +225,7 @@ body {
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  color: #111;
+  color: #5a4c40;
   transition: background 0.3s;
 }
 
