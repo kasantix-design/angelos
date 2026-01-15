@@ -68,5 +68,144 @@ body {
 .card-section {
   width: 66%;
   margin: 0 auto 4rem auto;
-  background: rgba(255
+  background: rgba(255, 255, 255, 0.95);
+  color: #111;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-section:hover {
+  transform: scale(1.01);
+}
+
+/* === HEADER INNI KORT === */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card-header h2 {
+  font-size: 2rem;
+}
+
+/* === FLEX: BILDE + TEKST === */
+.card-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.card-text {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* === FLIP-KORT / TAROTKORT === */
+.flip-card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-back {
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+/* === KNAPP PÅ BAKSIDEN === */
+.order-button {
+  background: #e8e230;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #111;
+  transition: background 0.3s;
+}
+
+.order-button:hover {
+  background: #c9c211;
+}
+
+/* === GLIPPE DER BILDE KOMMER FREM === */
+.image-glimpse {
+  height: 50vh;
+  background-image: url("bilder/edz-norton.jpeg"); /* ✨ bytt ut med ditt spesialbilde */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  margin: 4rem auto;
+  width: 80%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* === FADE-IN ANIMASJON FOR GLIPPE === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* === MOBILVENNLIG RESPONS === */
+@media (max-width: 768px) {
+  .card-section {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+}
 
