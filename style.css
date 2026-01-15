@@ -1,3 +1,19 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BASIS === */
+body {
+  font-family: 'Georgia', serif;
+  background: #111; /* fallback */
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* === HEADER === */
 .page-header {
   text-align: center;
   padding: 2rem 1rem;
@@ -10,6 +26,7 @@
   border-bottom: 1px solid #ddd;
 }
 
+/* === FOOTER === */
 .page-footer {
   text-align: center;
   padding: 2rem;
@@ -19,15 +36,37 @@
   border-top: 1px solid #ddd;
 }
 
-/* 👇 Dette ER glippen hvor bildet "kommer frem" */
-.image-glimpse {
-  height: 50vh;
-  background-image: url("bilder/edz.borton.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 30px;
-  margin: 4rem auto;
-  width: 80%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+/* === STICKY BAKGRUNNSLAG (snøtekstur) === */
+.background-layer {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
 }
+
+.snow-texture {
+  background-image: url("bilder/bakgrunn.jpg"); /* ❄️ bytt ut med ditt bilde */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: #f6f2ec;
+  height: 100%;
+  filter: brightness(1.1) contrast(1.05);
+}
+
+/* === INNHOLDET SOM SCROLLER OVER === */
+.content-feed {
+  position: relative;
+  z-index: 1;
+  contain: paint;
+  transform: translateZ(0);
+  padding: 4rem 0;
+}
+
+/* === HVER KORTSEKSJON === */
+.card-section {
+  width: 66%;
+  margin: 0 auto 4rem auto;
+  background: rgba(255
+
