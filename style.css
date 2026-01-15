@@ -113,6 +113,12 @@ body {
   height: 40vh; /* Juster til 30vh, 50vh etter behov */
 }
 
+/* === LUFT MELLOM SEKSJONER === */
+.background-breath {
+  height: 50vh;
+  width: 100%;
+}
+
 
 /* === INNHOLD SOM SCROLLER OVER === */
 .content-feed {
