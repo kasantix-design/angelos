@@ -22,7 +22,7 @@
 /* 👇 Dette ER glippen hvor bildet "kommer frem" */
 .image-glimpse {
   height: 50vh;
-  background-image: url("/mnt/data/edz-norton-IAvYkUPm-lI-unsplash.jpeg");
+  background-image: url("bilder/edz.borton.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
