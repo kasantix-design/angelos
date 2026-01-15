@@ -35,15 +35,59 @@ body {
   object-fit: contain;
 }
 
-/* === FOOTER === */
-.page-footer {
-  text-align: center;
-  padding: 2rem;
+.page-footer-advanced {
   background-color: #f6f2ec;
-  color: #888;
-  font-size: 0.9rem;
+  color: #5a4c40;
+  padding: 3rem 2rem;
+  font-family: 'Georgia', serif;
   border-top: 1px solid #ddd;
 }
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1 1 300px;
+}
+
+.footer-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-left .quote {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-icons a {
+  display: inline-flex;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px dotted #ccc;
+  padding-top: 1rem;
+}
+
 
 /* === BAKGRUNNSLAG (fast bakgrunn) === */
 .background-layer {
