@@ -1,0 +1,33 @@
+.page-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f6f2ec;
+  color: #5a4c40;
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  z-index: 2;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f6f2ec;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+}
+
+/* 👇 Dette ER glippen hvor bildet "kommer frem" */
+.image-glimpse {
+  height: 50vh;
+  background-image: url("/mnt/data/edz-norton-IAvYkUPm-lI-unsplash.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  margin: 4rem auto;
+  width: 80%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
