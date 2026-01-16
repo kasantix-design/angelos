@@ -215,21 +215,22 @@ body {
   transform: rotateY(180deg);
 }
 
-/* === KNAPP BAK === */
+/* === KNAPPENE DINE === */
 .order-button {
-  background: #e8e230;
+  background: #E6A1A1;
   border: none;
-  padding: 0.8rem 1.4rem;
-  font-size: 1rem;
+  padding: 0.9rem 1.6rem;
+  font-size: 1.1rem;
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  color: #5a4c40;
-  transition: background 0.3s;
+  color: #111;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
 .order-button:hover {
-  background: #5a4c40;
+  background-color: #f0bcbc;
 }
 
 /* === GLIPPEBILDE === */
