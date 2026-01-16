@@ -10,16 +10,36 @@
   <script async type="text/javascript" src="https://checkout.vipps.no/checkout-button/v1/vipps-checkout-button.js"></script>
   <style>
     .flip-back {
-      background-color: #fce4ec; /* Rosa bakside */
+      background-color: #fce4ec;
     }
+
     .footer-icons lord-icon {
       --primary: #5c4033;
       --secondary: #5c4033;
+    }
+
+    .order-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: #eac7ce;
+      color: #111;
+      padding: 0.9rem 1.6rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .order-button:hover {
+      background-color: #d7aeb5;
     }
   </style>
 </head>
 <body>
 
+  <!-- 🌟 HEADER -->
   <header class="page-header">
     <div class="logo-title">
       <img src="bilder/angelos-logo.png" alt="Logo" class="logo">
@@ -27,13 +47,14 @@
     </div>
   </header>
 
+  <!-- ❄️ BAKGRUNN -->
   <div class="background-layer">
     <div class="snow-texture"></div>
   </div>
 
   <main class="content-feed">
 
-    <!-- 🃏 Kort 1 -->
+    <!-- 🃏 Kort 1 – Boken -->
     <section class="card-section">
       <div class="card-header">
         <h2>Hva denne boken gir deg</h2>
@@ -43,15 +64,18 @@
           <div class="flip-inner">
             <div class="flip-front">
               <img src="bilder/bok.png" alt="Lyset som huskes – bok" />
+              <div style="margin-top: 20px;">
+                <vipps-mobilepay-button
+                  brand="vipps"
+                  language="no"
+                  rounded="true"
+                  verb="pay"
+                  branded="true">
+                </vipps-mobilepay-button>
+              </div>
             </div>
             <div class="flip-back">
-              <br><br>
-              <vipps-mobilepay-button
-                brand="vipps"
-                language="no"
-                rounded="true"
-                verb="pay"
-                branded="true"></vipps-mobilepay-button>
+              <button class="order-button">Bestill boken</button>
             </div>
           </div>
         </div>
@@ -78,7 +102,7 @@
     <div class="image-glimpse"></div>
     <div class="background-breath"></div>
 
-    <!-- 🧘 Kort 2 -->
+    <!-- 🧘 Kort 2 – Veiledning -->
     <section class="card-section">
       <div class="card-header">
         <h2>Denne boken er for deg som:</h2>
@@ -102,13 +126,14 @@
             🌟 opplever et skifte i livet og søker trygghet i det<br>
             🌟 vil forstå seg selv i et større lys
           </p>
+          <a href="#" class="order-button">👉 Jeg vil bestille</a>
         </div>
       </div>
     </section>
 
     <div class="background-breath"></div>
 
-    <!-- 🃏 Kort 3 -->
+    <!-- 🧬 Kort 3 – Om metoden -->
     <section class="card-section">
       <div class="card-header">
         <h2>Om Angelosmetoden</h2>
@@ -139,8 +164,7 @@
             🌟 klar grensesetting<br>
             🌟 evnen til å stå i eget lys
           </p>
-
-          <p>Dette er bokens kjerne.</p>
+          <a href="#" class="order-button">👉 Les mer</a>
         </div>
       </div>
     </section>
