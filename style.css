@@ -288,5 +288,14 @@ body {
     width: 70px;
   }
 }
+.flip-back {
+  background-color: #fce4ec; /* Rosa bakside */
+}
+
+.footer-icons lord-icon {
+  --primary: #5c4033;
+  --secondary: #5c4033;
+}
+
 
 
