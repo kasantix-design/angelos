@@ -55,49 +55,56 @@
   <main class="content-feed">
 
     <!-- 🃏 Kort 1 – Boken -->
-    <section class="card-section">
-      <div class="card-header">
-        <h2>Hva denne boken gir deg</h2>
-      </div>
-      <div class="card-content">
-        <div class="flip-card">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <img src="bilder/bok.png" alt="Lyset som huskes – bok" />
-              <div style="margin-top: 20px;">
-                <vipps-mobilepay-button
-                  brand="vipps"
-                  language="no"
-                  rounded="true"
-                  verb="pay"
-                  branded="true">
-                </vipps-mobilepay-button>
-              </div>
-            </div>
-            <div class="flip-back">
-              <button class="order-button">Bestill boken</button>
-            </div>
+<section class="card-section">
+  <div class="card-header">
+    <h2>Hva denne boken gir deg</h2>
+  </div>
+  <div class="card-content">
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="bilder/bok.png" alt="Lyset som huskes – bok" />
+          <div style="margin-top: 20px; display: flex; justify-content: center;">
+            <vipps-mobilepay-button
+              brand="vipps"
+              language="no"
+              rounded="true"
+              verb="pay"
+              branded="true">
+            </vipps-mobilepay-button>
           </div>
         </div>
-        <div class="card-text">
-          <p>Dette er ikke en bok du “leser gjennom”.<br>
-          Det er en bok du møter.<br><br>
-          Når du leser, inviteres du inn i:</p>
-          <p>
-            🌟 en dypere ro enn tankene kan skape<br>
-            🌟 kroppen som bærer mer intelligens enn sinnet<br>
-            🌟 sjelens egen hukommelse<br>
-            🌟 gamle lag som slipper taket<br>
-            🌟 den indre stemmen som har ventet<br>
-            🌟 gjenkjennelse av din opprinnelse og ditt eget lys
-          </p>
-          <p>
-            Mange forteller at de kjenner energien fysisk i kroppen når de leser.<br>
-            For noen åpner det seg minner, for andre en ny klarhet – for andre igjen en trygg indre forankring.
-          </p>
+        <div class="flip-back">
+          <vipps-mobilepay-button
+            brand="vipps"
+            language="no"
+            rounded="true"
+            verb="pay"
+            branded="true">
+          </vipps-mobilepay-button>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="card-text">
+      <p>Dette er ikke en bok du “leser gjennom”.<br>
+      Det er en bok du møter.<br><br>
+      Når du leser, inviteres du inn i:</p>
+      <p>
+        🌟 en dypere ro enn tankene kan skape<br>
+        🌟 kroppen som bærer mer intelligens enn sinnet<br>
+        🌟 sjelens egen hukommelse<br>
+        🌟 gamle lag som slipper taket<br>
+        🌟 den indre stemmen som har ventet<br>
+        🌟 gjenkjennelse av din opprinnelse og ditt eget lys
+      </p>
+      <p>
+        Mange forteller at de kjenner energien fysisk i kroppen når de leser.<br>
+        For noen åpner det seg minner, for andre en ny klarhet – for andre igjen en trygg indre forankring.
+      </p>
+    </div>
+  </div>
+</section>
+
 
     <div class="image-glimpse"></div>
     <div class="background-breath"></div>
