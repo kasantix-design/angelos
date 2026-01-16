@@ -54,7 +54,7 @@
 
   <main class="content-feed">
 
-    <!-- 🃏 Kort 1 – Boken -->
+  <!-- 🃏 Kort 1 – Boken -->
 <section class="card-section">
   <div class="card-header">
     <h2>Hva denne boken gir deg</h2>
@@ -64,15 +64,6 @@
       <div class="flip-inner">
         <div class="flip-front">
           <img src="bilder/bok.png" alt="Lyset som huskes – bok" />
-          <div style="margin-top: 20px; display: flex; justify-content: center;">
-            <vipps-mobilepay-button
-              brand="vipps"
-              language="no"
-              rounded="true"
-              verb="pay"
-              branded="true">
-            </vipps-mobilepay-button>
-          </div>
         </div>
         <div class="flip-back">
           <vipps-mobilepay-button
@@ -85,6 +76,18 @@
         </div>
       </div>
     </div>
+
+    <!-- ✅ Vipps-knapp UNDER kortet -->
+    <div style="margin-left: 20px;">
+      <vipps-mobilepay-button
+        brand="vipps"
+        language="no"
+        rounded="true"
+        verb="pay"
+        branded="true">
+      </vipps-mobilepay-button>
+    </div>
+
     <div class="card-text">
       <p>Dette er ikke en bok du “leser gjennom”.<br>
       Det er en bok du møter.<br><br>
@@ -104,6 +107,7 @@
     </div>
   </div>
 </section>
+
 
 
     <div class="image-glimpse"></div>
