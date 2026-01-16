@@ -1,65 +1,116 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bestill og betal – Angelosmetoden</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 📎 Stil og fonter -->
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&family=Lora&display=swap" rel="stylesheet">
+
+  <!-- 🌟 Vipps -->
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
   <script async type="text/javascript" src="https://checkout.vipps.no/checkout-button/v1/vipps-checkout-button.js"></script>
 </head>
+
 <body>
 
-  <!-- 💬 Hero-seksjon -->
-  <section class="hero-section" style="padding: 60px 20px; background: #fff0f5; text-align: center;">
-    <div class="container">
-      <h1>Bestill boken direkte fra Angelos forlag</h1>
-      <p style="max-width: 700px; margin: auto;">
-        Du kan bestille boken via Vipps. <br>
-        Ønsker du den tilsendt i posten, bruk knappen under «Sendes i posten». <br>
+  <!-- 🔮 HEADER -->
+  <header class="page-header">
+    <div class="logo-title">
+      <img src="bilder/angelos-logo.png" alt="Logo" class="logo">
+      <h1>Angelosmetoden – Lyset som huskes</h1>
+    </div>
+  </header>
+
+  <!-- ❄️ Bakgrunn -->
+  <div class="background-layer">
+    <div class="snow-texture"></div>
+  </div>
+
+  <main class="content-feed">
+
+    <!-- 💬 Hero-seksjon -->
+    <section class="card-section">
+      <h2>Bestill boken direkte fra Angelos forlag</h2>
+      <p>
+        Du kan bestille boken via Vipps.<br>
+        Ønsker du den tilsendt i posten, bruk knappen under «Sendes i posten».<br>
         Hvis du heller vil hente boken hos Angelos forlag, bruker du knappen under «Hentes hos Angelos».
       </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- 📦 Boks 1: Sendes i posten -->
-  <section class="section-light" style="padding: 40px 0;">
-    <div class="container" style="border: 2px solid #e3c1d3; border-radius: 12px; padding: 30px; margin-bottom: 40px;">
-      <div class="grid-2" style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
-        <div style="flex: 1;">
-          <img src="images/bok.png" alt="Bokcover" class="img-round" style="width: 100%; max-width: 400px;">
+    <!-- 📦 Boks 1: Sendes i posten -->
+    <section class="card-section">
+      <div class="card-content">
+        <div>
+          <img src="bilder/bok.png" alt="Bokcover" class="img-round" style="width: 100%; max-width: 400px;" />
         </div>
-        <div style="flex: 1;">
+        <div class="card-text">
           <h2>Sendes i posten</h2>
           <p>Pris: 399 kr inkl. frakt</p>
           <vipps-mobilepay-button brand="vipps" language="no" rounded="true" verb="pay" branded="true"></vipps-mobilepay-button>
           <br><br>
-          <a href="#" class="order-button" style="background-color: #f48fb1; padding: 14px 24px; font-size: 1.1rem; border-radius: 6px; display: inline-block;">Jeg har betalt, hva nå?</a>
+          <a href="#" class="order-button">Jeg har betalt, hva nå?</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 🏡 Boks 2: Hentes hos Angelos -->
-  <section class="section-light" style="padding: 40px 0;">
-    <div class="container" style="border: 2px solid #e3c1d3; border-radius: 12px; padding: 30px; margin-bottom: 40px;">
-      <div class="grid-2" style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
-        <div style="flex: 1;">
-          <img src="images/bok.png" alt="Bokcover" class="img-round" style="width: 100%; max-width: 400px;">
+    <!-- 🏡 Boks 2: Hentes hos Angelos -->
+    <section class="card-section">
+      <div class="card-content">
+        <div>
+          <img src="bilder/bok.png" alt="Bokcover" class="img-round" style="width: 100%; max-width: 400px;" />
         </div>
-        <div style="flex: 1;">
+        <div class="card-text">
           <h2>Hentes hos Angelos</h2>
           <p>Pris: 349 kr (uten frakt)</p>
           <vipps-mobilepay-button brand="vipps" language="no" rounded="true" verb="pay" branded="true"></vipps-mobilepay-button>
           <br><br>
-          <a href="#" class="order-button" style="background-color: #f48fb1; padding: 14px 24px; font-size: 1.1rem; border-radius: 6px; display: inline-block;">Jeg har betalt, hva nå?</a>
+          <a href="#" class="order-button">Jeg har betalt, hva nå?</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 🌄 Glippen nederst -->
-  <div class="image-glimpse" style="height: 200px; background-image: url('images/glipp.jpg'); background-size: cover; background-position: center;"></div>
+    <!-- 🌄 Glippen nederst -->
+    <div class="image-glimpse"></div>
+
+  </main>
+
+  <!-- 📬 FOOTER -->
+  <footer class="page-footer-advanced">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>Angelosmetoden</h2>
+        <p class="quote">
+          “Lyset huskes ikke med tanken.<br>
+          Lyset huskes med kroppen.<br>
+          Når sjelen får plass, faller fryktens strukturer sammen,<br>
+          og du våkner til din egen opprinnelse igjen.”
+        </p>
+      </div>
+
+      <div class="footer-icons">
+        <a href="mailto:post@angelosmetoden.no" aria-label="E-post">
+          <lord-icon src="https://cdn.lordicon.com/rsvfayfn.json" trigger="hover" colors="primary:#5c4033,secondary:#5c4033" style="width:50px;height:50px"></lord-icon>
+        </a>
+        <a href="https://angelosmetoden.no" target="_blank" aria-label="Nettside">
+          <lord-icon src="https://cdn.lordicon.com/xyboiuok.json" trigger="hover" colors="primary:#5c4033,secondary:#5c4033" style="width:50px;height:50px"></lord-icon>
+        </a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <lord-icon src="https://cdn.lordicon.com/slkvcfos.json" trigger="hover" colors="primary:#5c4033,secondary:#5c4033" style="width:50px;height:50px"></lord-icon>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <lord-icon src="https://cdn.lordicon.com/pvbutfdk.json" trigger="hover" colors="primary:#5c4033,secondary:#5c4033" style="width:50px;height:50px"></lord-icon>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Angelosmetoden – Lyset som huskes. Alle rettigheter reservert.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
