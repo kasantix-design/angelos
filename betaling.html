@@ -49,8 +49,9 @@
     <div class="card-text" style="flex: 2;">
       <p style="margin-top: 1.5rem;">
         Du kan bestille boken fra Angelos forlag og betale med Vipps.<br><br>
-        Ønsker du den tilsendt i posten så bruker du knappen du finner i den første seksjonen under der det står «Sendes i posten».<br><br>
-        Dersom du heller vil hente boken hos Angelos forlag, bruker du knappen du finner i siste seksjon hvor det står under «Hentes hos Angelos».
+        Ønsker du den tilsendt i posten så bruker du knappen du finner i seksjonen «Sendes i posten».<br><br>
+        Dersom du heller vil hente boken hos Angelos forlag, er betaling bestilling og du kan avtale henting hos Angelos forlag i vipps-appen eller på epost.
+        Les mer i seksjonen under. 
       </p>
     </div>
   </div>
@@ -69,7 +70,18 @@
           <p>Ved forsendelse til utlandet blir portoen dyrere</p>
           <vipps-mobilepay-button brand="vipps" language="no" rounded="true" verb="pay" branded="true"></vipps-mobilepay-button>
           <br><br>
-          <a href="#" class="order-button">Jeg har betalt, hva nå?</a>
+          <p> Betaling på kroner 448 kr regnes som bestilling av boken "Angelosmetoden". Nå du vippser 448 kr trykker du på feltet "kommentar" og legger inn adressen din der</p>
+          <p> Du kan også hente boken selv på Angelos Forlag. Da vippser du 379 kroner. Du kan avtale henting i Øvre Korskirkealmenning 4, 5017 Bergen </p>
+          <!-- Modal -->
+          <div id="modal" class="modal">
+          <div class="modal-content">
+          <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+          <p>Takk for betalingen! 💖 Boken blir sendt fra forlaget senest to dager etter bestilling. Forsendelsen gjøres som brev uten sporing.</p>
+          <p> Dersom du har spørsmål kan du sende dem dirkete i vippsappen eller sende dem til epost: irene@angelosmetoden.no</p>
+  </div>
+</div>
+          
+          <button onclick="document.getElementById('modal').style.display='block'" class="order-button"> Jeg har betalt, hva nå?</button>
         </div>
       </div>
     </section>
@@ -83,9 +95,8 @@
         <div class="card-text">
           <h2>🔥Om Angelosmetoden</h2>
           <p>Forfatterens ord <br><br>
-         “Denne boken ble skrevet som et samarbeid mellom mitt jordiske jeg og sjelen, slik den trådte frem i lys, nærvær og klarhet.<br><br>
-          Prosessen har vært en reise, en åpning og et hjem. Jeg håper du vil kjenne det samme når du leser.”
-          </p>
+          <p>“Denne boken ble skrevet som et samarbeid mellom mitt jordiske jeg og sjelen, slik den trådte frem i lys, nærvær og klarhet.<br><br>
+          Prosessen har vært en reise, en åpning og et hjem. Jeg håper du vil kjenne det samme når du leser.”</p>
       <p>Angelosmetoden er ikke en teknikk – det er en tilstand. En levende måte å være menneske på der sjelen får rom i kroppen – og kroppen i sjelen.</p>
       <p>Det skaper:</p>
       <ul>
@@ -98,7 +109,7 @@
         <li>klar grensesetting</li>
         <li>evnen til å stå i eget lys</li>
       </ul>
-    </section>
+   
       <h2>Tilbakemeldinger</h2>
       <blockquote>“Jeg kjente fysisk varme i brystet når jeg leste.”</blockquote>
       <blockquote>“Noe våknet i meg – en dyp ro.”</blockquote>
@@ -132,14 +143,7 @@
       </p>
 
       <!-- 🧡 Vipps-knapp i footer -->
-      <div style="margin-top: 1.5rem;">
-        <vipps-mobilepay-button
-          brand="vipps"
-          language="no"
-          rounded="true"
-          verb="pay"
-          branded="true">
-        </vipps-mobilepay-button>
+      <vipps-mobilepay-button brand="vipps" language="no" rounded="true" verb="pay" branded="true"></vipps-mobilepay-button>
       </div>
     </div>
 
