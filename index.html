@@ -85,15 +85,18 @@
         </div>
       </div>
 
-      <!-- Vipps-knapp under kort -->
-      <vipps-mobilepay-button
-        brand="vipps"
-        language="no"
-        rounded="true"
-        verb="pay"
-        branded="true">
-      </vipps-mobilepay-button>
-    </div>
+<!-- Knappecontainer -->
+<div class="button-container">
+  <!-- Vipps-knapp med lenke -->
+  <a href="VIPPS-BETALINGSLENKE" class="vipps-fake-button" target="_blank" rel="noopener">
+    🧡 Betal med Vipps
+  </a>
+
+  <!-- Kontakt-knapp under -->
+  <a href="https://betaling.html#sendes i posten" class="order-button">
+    👉 Kontakt for sesjon
+  </a>
+</div>
  
     <!-- 📝 Høyre kolonne: Tekst -->
     <div class="card-text" style="flex: 2;">
@@ -137,8 +140,6 @@
             </div>
             <div class="flip-back">
               <a href="betaling.html" class="order-button">Bestill boken her</a>
-
-
             </div>
           </div>
         </div>
@@ -151,8 +152,7 @@
             🌟 vil forstå seg selv i et større lys
           </p>
           <a href="betaling.html" class="order-button">👉 Jeg har lyst å bestille boken</a>
-        
-
+    
         </div>
       </div>
     </section>
@@ -204,7 +204,12 @@
   </main>
   <div class="background-breath"></div>
   <div class="background-breath"></div>
-
+  
+ <section class="card-section">
+      <h2>Personlig veiledning</h2>
+      <p>Hvis du ønsker en personlig sesjon med Astra — en individuell åpning inn i ditt eget lys gjennom Angelosmetoden — kan du ta kontakt her:</p>
+      <a href="DIN-KONTAKTLENKE" class="order-button">👉 Kontakt for sesjon</a>
+    </section>
 
   <!-- 📬 FOOTER -->
 <footer class="page-footer-advanced">
@@ -222,14 +227,8 @@
       </p>
 
       <!-- 🧡 Vipps-knapp i footer -->
-      <div style="margin-top: 1.5rem;">
-        <vipps-mobilepay-button
-          brand="vipps"
-          language="no"
-          rounded="true"
-          verb="pay"
-          branded="true">
-        </vipps-mobilepay-button>
+  <a href="VIPPS-BETALINGSLENKE" class="vipps-fake-button" target="_blank" rel="noopener">
+    🧡 Betal med Vipps </a>
       </div>
     </div>
 
