@@ -75,7 +75,8 @@
             <img src="bilder/bok.jpeg" alt="Lyset som huskes – bok" />
           </div>
           <div class="flip-back">
-            <vipps-mobilepay-button brand="vipps" language="no" rounded="true" verb="pay" branded="true"></vipps-mobilepay-button> 
+            <a href="vipps://payment?receiver=41646966" class="vipps-real-button" target="_blank" rel="noopener">
+            </a>
           </div>
         </div>
       </div>
@@ -220,7 +221,7 @@
         </div>
       </div>
     </div>
-  </p></br></div>br>
+  </p></br></div>
     <a href="betaling.html#boks1" class="order-button">👉 Jeg vil bestille boken</a>      
 </section>
 
@@ -286,7 +287,7 @@
       </p>
 
       <!-- 🧡 Vipps-knapp i footer -->
-      <a href="VIPPS-BETALINGSLENKE" class="vipps-fake-button" target="_blank" rel="noopener">
+      <vipps-mobilepay-button brand="vipps" language="no" rounded="true" verb="pay" branded="true"></vipps-mobilepay-button> 
         🧡 Betal med Vipps
       </a>
     </div>
